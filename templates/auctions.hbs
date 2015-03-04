@@ -12,6 +12,6 @@
 
 <ul>
   {{#each auction in model}}
-    <li>{{auction.name}} {{auction.date}} {{auction.location}}</li>
+    <li>{{#link-to 'auction' auction}}{{auction.name}} {{auction.date}} {{auction.location}}{{/link-to}}</li>
   {{/each}}
 </ul>

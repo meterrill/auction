@@ -1,8 +1,8 @@
 <div class=row>
   <div class='col-xs-6'>
-    <h1>Motorcycles</h1>
-    <h3>San Diego, CA, USA</h3>
-    <h3>March 2015</h3>
+    <h1>{{name}}</h1>
+    <h3>{{location}}</h3>
+    <h3>{{date}}</h3>
   </div>
   <div class="col-xs-6">
     <div class="pull-right">
@@ -12,7 +12,7 @@
 </div>
 
 <ul>
-  {{#each lot in model}}
+  {{#each lot in lots}}
     <li>{{lot.year}} {{lot.make}} {{lot.model}}</li>
     <!-- {{#link-to ''}}{{/link-to}} -->
   {{/each}}

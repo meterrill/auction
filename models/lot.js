@@ -4,4 +4,5 @@ Terrills.Lot = DS.Model.extend({
   model: DS.attr(),
   estimatedValueLow: DS.attr(),
   estimatedValueHigh: DS.attr(),
+  auction: DS.belongsTo('auction', {async: true})
 });
