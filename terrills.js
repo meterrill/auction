@@ -1,0 +1,1 @@
+Terrills = Ember.Application.create();
