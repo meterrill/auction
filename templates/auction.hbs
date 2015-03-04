@@ -6,14 +6,16 @@
   </div>
   <div class="col-xs-6">
     <div class="pull-right">
-      {{#link-to 'new-lot' classNames="btn btn-info"}}Add new lot to this auction{{/link-to}}
+      {{#link-to 'new-lot' this.id classNames="btn btn-info"}}Add new lot to this auction{{/link-to}}
     </div>
   </div>
 </div>
 
 <ul>
-  {{#each lot in lots}}
-    <li>{{lot.year}} {{lot.make}} {{lot.model}}</li>
+  {{#each lots}}
+    <li>{{year}} {{make}} {{modelName}}</li>
     <!-- {{#link-to ''}}{{/link-to}} -->
   {{/each}}
 </ul>
+
+{{outlet}}
