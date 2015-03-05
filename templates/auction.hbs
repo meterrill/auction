@@ -11,10 +11,18 @@
   </div>
 </div>
 
-<ul>
+<ul class="list-unstyled">
   {{#each lots}}
-    <li>{{year}} {{make}} {{modelName}}</li>
-    <!-- {{#link-to ''}}{{/link-to}} -->
+    <li class="lot">
+      <div class="row">
+        <div class="col-xs-2">
+          <img {{bind-attr src=photoUrl }}>
+        </div>
+        <div class="col-xs-10">
+          {{year}} {{make}} {{modelName}}
+        </div>
+      </div>
+    </li>
   {{/each}}
 </ul>
 

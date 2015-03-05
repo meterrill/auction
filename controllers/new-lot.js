@@ -7,7 +7,8 @@ Terrills.NewLotController = Ember.ObjectController.extend({
         make: this.get('make'),
         modelName: this.get('modelName'),
         estimatedValueLow: this.get('estimatedValueLow'),
-        estimatedValueHigh: this.get('estimatedValueHigh')
+        estimatedValueHigh: this.get('estimatedValueHigh'),
+        photoUrl: this.get('photoUrl')
       });
       newLot.save();
       var auction = this.get('controllers.auction.model');
