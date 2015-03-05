@@ -15,14 +15,17 @@
   {{#each lots itemController='lot'}}
     <li class="list-item" {{action 'showDetails'}}>
       {{#if detailsShowing}}
-        <div class="row">
+        <div class="row lot">
           <div class="col-xs-8">
             <img {{bind-attr src=photoUrl}} />
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-4 lot-details-container">
             <p>{{year}}</p>
             <p>{{make}}</p>
             <p>{{modelName}}</p>
+            <div class="delete-edit">
+              <a href="#" {{action "delete"}}>Delete</a>
+            </div>
           </div>
         </div>
       {{else}}
