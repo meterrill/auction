@@ -2,7 +2,21 @@ img {
   width: 100%;
 }
 
-.lot {
+.list-item {
   border-top: 1px solid lightgray;
   padding: 1em 0 1em 0;
+}
+
+.brand {
+  font-family: serif;
+}
+
+.navbar {
+  radius: 0;
+  border: none;
+  background-color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
 }

@@ -10,8 +10,8 @@
   </div>
 </div>
 
-<ul>
+<ul class="list-unstyled">
   {{#each auction in model}}
-    <li>{{#link-to 'auction' auction}}{{auction.name}} {{auction.date}} {{auction.location}}{{/link-to}}</li>
+    <li class="list-item">{{#link-to 'auction' auction}}{{auction.name}} {{auction.date}} {{auction.location}}{{/link-to}}</li>
   {{/each}}
 </ul>
