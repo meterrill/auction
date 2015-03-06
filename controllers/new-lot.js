@@ -11,9 +11,18 @@ Terrills.NewLotController = Ember.ObjectController.extend({
         photoUrl: this.get('photoUrl')
       });
       newLot.save();
+
+
       var auction = this.get('controllers.auction.model');
       auction.get('lots').pushObject(newLot);
       auction.save();
+      
+      this.set('year', null);
+      this.set('make', null);
+      this.set('modelName', null);
+      this.set('estimatedValueLow', null);
+      this.set('estimatedValueHigh', null);
+      this.set('photoUrl', null);
 
       this.transitionToRoute('auction', auction.id);
     }

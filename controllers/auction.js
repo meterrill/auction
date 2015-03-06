@@ -1,6 +1,5 @@
 Terrills.AuctionController = Ember.ObjectController.extend({
   actions: {
-
     deleteAuction: function() {
       if(confirm("Are you sure?")){
         var auction = this.get('model');
