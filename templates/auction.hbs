@@ -1,4 +1,4 @@
-<div class=row>
+<div class="row">
   <div class='col-xs-6'>
     <h1>{{name}}</h1>
     <h3>{{location}}</h3>
@@ -9,6 +9,14 @@
       {{#link-to 'new-lot' this.id classNames="btn btn-info"}}Add new lot to this auction{{/link-to}}
     </div>
   </div>
+</div>
+<div class="row">
+  <ul class="auction-options list-unstyled">
+    <li>Lots</li>
+    <li>Contacts</li>
+    <li>Edit</li>
+    <li><a {{action "deleteAuction" this}}>Delete</a></li>
+  </ul>
 </div>
 
 <ul class="list-unstyled">

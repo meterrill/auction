@@ -35,3 +35,13 @@ img {
   position: absolute;
   bottom: 0;
 }
+
+.auction-options {
+
+  text-align: center;
+}
+
+.auction-options li {
+  display: inline;
+  margin: 50px;
+}
